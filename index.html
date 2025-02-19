@@ -6,6 +6,36 @@
     <title>Welcome page</title>
 </head>
 <body>
-    <h1>Hello students of the Web Technologies course !</h1>
+    <main>
+        <div>
+            <a href="https://www.heig-vd.ch" title="Heig-vd" target="_blank">Heig-vd</a>
+            <h1>Hello students of the Web Technologies course !</h1>
+        </div>
+        <div>
+            <ol>
+              <li>A</li>
+              <li>B
+                <ul>
+                  <li>C</li>
+                  <li>D</li>
+                  <li>E</li>
+                </ul>
+              </li>
+              <li>F</li>
+            </ol>
+        </div>
+        <section>
+            <form action='/articles/' method='POST'>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" />
+                <label>Title:
+                    <input type="text" id="title" name="title" />
+                </label>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" />
+                <button type="submit">Save</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
